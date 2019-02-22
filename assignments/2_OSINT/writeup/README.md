@@ -31,6 +31,7 @@ She has contact with a user called Dev0id_cache on Twitter, who seems to be inte
 
 Extra)
 "CMSC389R-{h0w_2_iNt0_DNS_r3c0Rd5"}" Flag found on dnsdumpster
+
 "CMSC389R-{"h1dd3n_1n_plain_5ight"}" Flag found by inspecting the website
 
 ### Part 2 (75 pts)

